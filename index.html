@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adwokat Ewa Wojteczek — Kancelaria Adwokacka w Bełchatowie</title>
+<meta name="description" content="Kancelaria Adwokacka adwokat Ewy Wojteczek w Bełchatowie. Rzetelna pomoc prawna w sprawach cywilnych, rodzinnych, karnych, frankowych i z zakresu prawa pracy.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4a463f">
+
+<!-- Dane lokalne (dla wyszukiwarek) -->
+<meta name="author" content="Adwokat Ewa Wojteczek">
+<meta name="geo.region" content="PL-LD">
+<meta name="geo.placename" content="Bełchatów">
+
+<!-- UWAGA: po publikacji zamień adres example.pl na docelową domenę kancelarii -->
+<link rel="canonical" href="https://www.example.pl/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Kancelaria Adwokacka Ewa Wojteczek">
+<meta property="og:url" content="https://www.example.pl/">
+<meta property="og:title" content="Adwokat Ewa Wojteczek — Kancelaria Adwokacka w Bełchatowie">
+<meta property="og:description" content="Rzetelna i skuteczna pomoc prawna. Kancelaria Adwokacka adwokat Ewy Wojteczek w Bełchatowie.">
+<!-- ZDJĘCIE OG: zapisz baner 1200×630 px jako images/og-kancelaria.jpg -->
+<meta property="og:image" content="https://www.example.pl/images/og-kancelaria.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Adwokat Ewa Wojteczek — Kancelaria Adwokacka w Bełchatowie">
+<meta name="twitter:description" content="Rzetelna i skuteczna pomoc prawna w Bełchatowie i całej Polsce.">
+<meta name="twitter:image" content="https://www.example.pl/images/og-kancelaria.jpg">
+
+<!-- Dane strukturalne: profil kancelarii dla Google (wizytówka, mapy, AI) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Attorney",
+  "name": "Kancelaria Adwokacka Adwokat Ewa Wojteczek",
+  "description": "Kancelaria Adwokacka adwokat Ewy Wojteczek w Bełchatowie. Pomoc prawna w sprawach cywilnych, rodzinnych, karnych, frankowych, gospodarczych i z zakresu prawa pracy.",
+  "url": "https://www.example.pl/",
+  "image": "https://www.example.pl/images/og-kancelaria.jpg",
+  "telephone": "+48793172769",
+  "email": "e.wojteczek@gmail.com",
+  "priceRange": "$$",
+  "knowsLanguage": "pl",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Osiedle Marii Konopnickiej 5",
+    "addressLocality": "Bełchatów",
+    "postalCode": "97-400",
+    "addressRegion": "łódzkie",
+    "addressCountry": "PL"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Bełchatów" },
+    { "@type": "City", "name": "Piotrków Trybunalski" },
+    { "@type": "AdministrativeArea", "name": "województwo łódzkie" },
+    { "@type": "Country", "name": "Polska" }
+  ],
+  "knowsAbout": [
+    "prawo cywilne", "prawo karne", "prawo rodzinne",
+    "prawo pracy", "sprawy frankowe", "prawo gospodarcze"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  /* ============================================================
+     DESIGN TOKENS — WHITE / GREY / BLACK / GOLD
+     ============================================================ */
+  :root{
+    --gold:#b08d57;        /* fills, icons, borders, buttons */
+    --gold-ink:#8a6a30;    /* gold text on light backgrounds (AA) */
+    --gold-soft:#d9bd8a;   /* gold on grey accent sections */
+
+    --black:#4a463f;       /* warm grey accent sections */
+    --black-2:#5a554c;     /* lighter grey (hover / chips) */
+
+    --bg:#ffffff;
+    --bg-alt:#f4f2ed;      /* warm light grey */
+    --surface:#ffffff;
+    --surface-soft:#faf8f4;
+    --line:#e7e2d8;
+    --line-strong:#d6cfc1;
+
+    --heading:#26221c;     /* warm charcoal */
+    --text:#46413a;        /* dark warm grey */
+    --muted:#6e685e;       /* grey */
+    --muted-soft:#9b948a;
+
+    --on-dark:#f6f3ec;
+    --on-dark-muted:rgba(246,243,236,.72);
+
+    --maxw:1180px;
+    --radius:14px;
+    --radius-sm:10px;
+    --shadow-sm:0 2px 10px rgba(27,24,19,.06);
+    --shadow-md:0 18px 44px rgba(27,24,19,.12);
+    --ease:cubic-bezier(.22,.61,.36,1);
+
+    --ff-serif:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --ff-sans:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    font-family:var(--ff-sans);
+    font-weight:400;
+    font-size:17px;
+    line-height:1.7;
+    color:var(--text);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,h4{margin:0;font-family:var(--ff-serif);font-weight:600;line-height:1.12;letter-spacing:-.01em;color:var(--heading);}
+  p{margin:0;}
+  ::selection{background:var(--gold);color:#fff;}
+
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    font-family:var(--ff-sans);
+    font-size:12.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--gold-ink);display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--gold);display:inline-block;}
+  .lead{color:var(--muted);font-size:18px;line-height:1.75;}
+
+  /* ============================================================
+     BUTTONS
+     ============================================================ */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    font-family:var(--ff-sans);font-size:15px;font-weight:500;letter-spacing:.01em;
+    padding:15px 28px;border-radius:999px;cursor:pointer;border:1px solid transparent;
+    transition:transform .2s var(--ease), background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease), box-shadow .25s var(--ease);
+    min-height:48px;
+  }
+  .btn svg{width:17px;height:17px;}
+  .btn-primary{background:var(--black);color:var(--gold-soft);box-shadow:var(--shadow-sm);}
+  .btn-primary:hover{background:var(--black-2);color:#fff;transform:translateY(-2px);box-shadow:var(--shadow-md);}
+  .btn-ghost{background:transparent;color:var(--heading);border-color:var(--line-strong);}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-ink);transform:translateY(-2px);}
+  .btn-gold{background:var(--gold);color:#fff;box-shadow:var(--shadow-sm);}
+  .btn-gold:hover{background:var(--gold-ink);transform:translateY(-2px);box-shadow:var(--shadow-md);}
+  .btn:focus-visible, a:focus-visible, .nav-link:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:8px;}
+
+  /* ============================================================
+     HEADER
+     ============================================================ */
+  .skip{position:absolute;left:-9999px;top:0;background:var(--black);color:var(--gold-soft);padding:12px 18px;border-radius:0 0 8px 0;z-index:200;font-weight:600;}
+  .skip:focus{left:0;}
+
+  header.site{
+    position:sticky;top:0;z-index:100;
+    background:rgba(255,255,255,.82);
+    backdrop-filter:saturate(140%) blur(12px);
+    -webkit-backdrop-filter:saturate(140%) blur(12px);
+    border-bottom:1px solid transparent;
+    transition:border-color .3s var(--ease), box-shadow .3s var(--ease);
+  }
+  header.site.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(27,24,19,.05);}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px;}
+  .brand{display:flex;align-items:center;gap:13px;}
+  .brand .monogram{
+    width:46px;height:46px;border-radius:50%;
+    background:var(--black);color:var(--gold-soft);
+    display:grid;place-items:center;
+    font-family:var(--ff-serif);font-weight:600;font-size:19px;letter-spacing:.02em;
+    box-shadow:inset 0 0 0 1px rgba(217,189,138,.45);
+  }
+  .brand .bt{display:flex;flex-direction:column;line-height:1.1;}
+  .brand .bt b{font-family:var(--ff-serif);font-weight:600;font-size:19px;color:var(--heading);letter-spacing:.005em;}
+  .brand .bt span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted-soft);font-weight:500;}
+
+  .nav-links{display:flex;align-items:center;gap:34px;list-style:none;margin:0;padding:0;}
+  .nav-link{font-size:15px;font-weight:500;color:var(--text);position:relative;padding:6px 0;transition:color .2s var(--ease);}
+  .nav-link::after{content:"";position:absolute;left:0;bottom:0;height:1.5px;width:0;background:var(--gold);transition:width .28s var(--ease);}
+  .nav-link:hover{color:var(--heading);}
+  .nav-link:hover::after{width:100%;}
+  .nav-link.active{color:var(--heading);}
+  .nav-link.active::after{width:100%;}
+  .nav-cta{display:flex;align-items:center;gap:14px;}
+
+  .hamburger{display:none;width:46px;height:46px;border:1px solid var(--line-strong);border-radius:10px;background:transparent;cursor:pointer;align-items:center;justify-content:center;}
+  .hamburger svg{width:22px;height:22px;color:var(--heading);}
+
+  /* ============================================================
+     HERO
+     ============================================================ */
+  .hero{position:relative;overflow:hidden;background:var(--bg);}
+  .hero::before{
+    content:"";position:absolute;top:-200px;right:-140px;width:540px;height:540px;border-radius:50%;
+    background:radial-gradient(circle, rgba(176,141,87,.10), transparent 62%);pointer-events:none;
+  }
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;padding-top:92px;padding-bottom:92px;position:relative;}
+  .hero h1{font-size:clamp(40px,5.4vw,68px);font-weight:600;color:var(--heading);}
+  .hero h1 em{font-style:italic;color:var(--gold-ink);font-weight:500;}
+  .hero p.lead{margin-top:24px;max-width:30rem;}
+  .hero-actions{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;}
+
+  /* Portrait placeholder */
+  .portrait{
+    position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5;
+    background:linear-gradient(160deg,#f1eee8,#e2ddd3);
+    box-shadow:var(--shadow-md);border:1px solid var(--line);
+  }
+  .portrait img{width:100%;height:100%;object-fit:cover;}
+  .ph{
+    position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:14px;text-align:center;padding:24px;
+  }
+  .ph svg{width:46px;height:46px;color:var(--gold);opacity:.85;}
+  .ph .ph-t{font-family:var(--ff-sans);font-size:13px;letter-spacing:.04em;line-height:1.5;color:var(--muted);}
+  .ph code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--gold-ink);background:rgba(27,24,19,.06);padding:2px 7px;border-radius:6px;}
+  .hero .portrait::after{
+    content:"";position:absolute;left:-14px;bottom:-14px;width:120px;height:120px;
+    border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);border-radius:0 0 0 18px;opacity:.55;
+  }
+
+  /* ============================================================
+     TRUST STRIP — BLACK
+     ============================================================ */
+  .trust{background:var(--black);border-top:2px solid var(--gold);}
+  .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;padding:50px 24px;}
+  .trust .t{display:flex;gap:14px;align-items:flex-start;}
+  .trust .t svg{width:26px;height:26px;color:var(--gold-soft);flex:none;margin-top:3px;}
+  .trust .t h4{color:var(--on-dark);font-size:18px;font-weight:600;margin-bottom:3px;}
+  .trust .t p{color:var(--on-dark-muted);font-size:14px;line-height:1.55;}
+
+  /* ============================================================
+     SECTION SHELL
+     ============================================================ */
+  section[id]{scroll-margin-top:96px;}
+  .section{padding:100px 0;}
+  .section.alt{background:var(--bg-alt);}
+  .section-head{max-width:680px;}
+  .section-head h2{font-size:clamp(30px,3.6vw,44px);font-weight:600;}
+  .section-head p{margin-top:18px;}
+  .center{margin-left:auto;margin-right:auto;text-align:center;}
+
+  /* ABOUT KANCELARIA */
+  .about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center;}
+  .about-copy p{color:var(--text);}
+  .about-copy p + p{margin-top:18px;}
+  .about-copy .lead{color:var(--heading);font-family:var(--ff-serif);font-size:25px;line-height:1.4;font-weight:500;margin-bottom:24px;}
+  .about-list{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:14px;}
+  .about-list li{display:flex;gap:12px;align-items:flex-start;color:var(--text);font-size:16px;}
+  .about-list svg{width:20px;height:20px;color:var(--gold);flex:none;margin-top:4px;}
+  .about-visual{position:relative;aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:linear-gradient(160deg,#eceae3,#ddd8cd);box-shadow:var(--shadow-md);border:1px solid var(--line);}
+  .about-visual img{width:100%;height:100%;object-fit:cover;}
+
+  /* SPECIALIZATIONS */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:54px;}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:34px 30px;transition:transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
+    position:relative;overflow:hidden;
+  }
+  .card::before{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--gold);transition:width .35s var(--ease);}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:var(--line-strong);}
+  .card:hover::before{width:100%;}
+  .card .ico{
+    width:54px;height:54px;border-radius:13px;display:grid;place-items:center;margin-bottom:22px;
+    background:rgba(176,141,87,.14);color:var(--gold-ink);
+    transition:background .3s var(--ease), color .3s var(--ease);
+  }
+  .card:hover .ico{background:var(--black);color:var(--gold-soft);}
+  .card .ico svg{width:26px;height:26px;}
+  .card h3{font-size:23px;font-weight:600;margin-bottom:10px;}
+  .card p{color:var(--muted);font-size:15.5px;line-height:1.6;}
+
+  /* ATTORNEY PROFILE */
+  .attorney{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center;}
+  .attorney .portrait{aspect-ratio:4/5;max-width:420px;}
+  .attorney .sig{font-family:var(--ff-serif);font-style:italic;font-size:26px;color:var(--gold-ink);margin-top:28px;}
+  .attorney .role{color:var(--gold-ink);font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px;}
+  .quote{
+    font-family:var(--ff-serif);font-size:clamp(24px,2.6vw,32px);line-height:1.4;font-weight:500;
+    color:var(--heading);margin:0 0 26px;
+  }
+  .attorney .lead + .lead{margin-top:16px;}
+  .creds{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;}
+  .creds li{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:var(--text);}
+  .creds svg{width:19px;height:19px;color:var(--gold);flex:none;margin-top:4px;}
+
+  /* CTA BAND — BLACK */
+  .cta-band{background:var(--black);text-align:center;position:relative;overflow:hidden;}
+  .cta-band::before,.cta-band::after{content:"";position:absolute;width:280px;height:280px;border-radius:50%;border:1px solid rgba(205,174,120,.18);}
+  .cta-band::before{top:-140px;left:-80px;}
+  .cta-band::after{bottom:-160px;right:-60px;width:340px;height:340px;}
+  .cta-band .wrap{position:relative;z-index:1;padding:88px 24px;}
+  .cta-band h2{color:var(--on-dark);font-size:clamp(30px,3.8vw,46px);max-width:680px;margin:0 auto;}
+  .cta-band p{color:var(--on-dark-muted);margin:20px auto 34px;max-width:560px;}
+
+  /* CONTACT */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:start;}
+  .contact-list{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:8px;}
+  .contact-item{display:flex;gap:18px;align-items:center;padding:18px 20px;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--surface);transition:border-color .25s var(--ease), transform .25s var(--ease), box-shadow .25s var(--ease);}
+  a.contact-item:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:var(--shadow-sm);}
+  .contact-item .ci{width:46px;height:46px;border-radius:11px;background:rgba(176,141,87,.14);color:var(--gold-ink);display:grid;place-items:center;flex:none;}
+  .contact-item .ci svg{width:21px;height:21px;}
+  .contact-item .lbl{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-soft);font-weight:600;}
+  .contact-item .val{font-size:17px;color:var(--heading);font-weight:500;}
+  .map{aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:linear-gradient(160deg,#eceae3,#ddd8cd);position:relative;}
+  .map iframe{width:100%;height:100%;border:0;display:block;}
+  .hours{margin-top:16px;display:flex;gap:10px;align-items:center;color:var(--muted);font-size:14.5px;}
+  .hours svg{width:18px;height:18px;color:var(--gold);flex:none;}
+
+  /* FOOTER — BLACK */
+  footer.site{background:var(--black);color:var(--on-dark-muted);padding:64px 0 30px;border-top:2px solid var(--gold);}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;}
+  footer.site .brand .monogram{background:var(--black-2);color:var(--gold-soft);}
+  footer.site .brand .bt b{color:var(--on-dark);}
+  .foot-about{color:var(--on-dark-muted);font-size:15px;line-height:1.7;margin-top:20px;max-width:30rem;}
+  footer.site h4{color:var(--on-dark);font-family:var(--ff-sans);font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:18px;}
+  .foot-links{list-style:none;margin:0;padding:0;display:grid;gap:11px;}
+  .foot-links a{color:var(--on-dark-muted);font-size:15px;transition:color .2s var(--ease);}
+  .foot-links a:hover{color:var(--gold-soft);}
+  .foot-bottom{margin-top:48px;padding-top:24px;border-top:1px solid rgba(244,241,234,.12);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px;color:rgba(244,241,234,.5);}
+  .foot-bottom a:hover{color:var(--gold-soft);}
+
+  /* REVEAL ANIMATION */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease), transform .7s var(--ease);}
+  .reveal.in{opacity:1;transform:none;}
+
+  /* ============================================================
+     RESPONSIVE
+     ============================================================ */
+  @media (max-width:980px){
+    .hero .wrap{grid-template-columns:1fr;gap:48px;padding-top:64px;padding-bottom:64px;}
+    .hero .portrait{max-width:440px;margin:0 auto;width:100%;}
+    .trust .wrap{grid-template-columns:1fr 1fr;gap:28px;}
+    .about-grid{grid-template-columns:1fr;gap:44px;}
+    .about-visual{max-width:480px;aspect-ratio:16/12;}
+    .cards{grid-template-columns:1fr 1fr;}
+    .attorney{grid-template-columns:1fr;gap:44px;}
+    .attorney .portrait{margin:0 auto;}
+    .contact-grid{grid-template-columns:1fr;gap:40px;}
+    .foot-grid{grid-template-columns:1fr 1fr;gap:36px;}
+  }
+  @media (max-width:680px){
+    body{font-size:16px;}
+    .section{padding:70px 0;}
+    .nav-links, .nav-cta .btn{display:none;}
+    .hamburger{display:flex;}
+    .cards{grid-template-columns:1fr;}
+    .creds{grid-template-columns:1fr;}
+    .trust .wrap{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .hero-actions .btn{flex:1 1 auto;}
+    .callbar{display:flex;}
+    body{padding-bottom:78px;}
+  }
+
+  /* MOBILE NAV PANEL */
+  .mnav{position:fixed;inset:0;z-index:150;display:none;}
+  .mnav.open{display:block;}
+  .mnav-scrim{position:absolute;inset:0;background:rgba(27,24,19,.5);backdrop-filter:blur(2px);}
+  .mnav-panel{
+    position:absolute;top:0;right:0;height:100%;width:min(82vw,360px);background:var(--surface);
+    box-shadow:-10px 0 40px rgba(27,24,19,.18);padding:26px 26px 40px;display:flex;flex-direction:column;
+    border-left:1px solid var(--line);
+    transform:translateX(100%);transition:transform .35s var(--ease);
+  }
+  .mnav.open .mnav-panel{transform:none;}
+  .mnav-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;}
+  .mnav-close{width:44px;height:44px;border:1px solid var(--line-strong);border-radius:10px;background:transparent;cursor:pointer;display:grid;place-items:center;}
+  .mnav-close svg{width:22px;height:22px;color:var(--heading);}
+  .mnav-links{list-style:none;margin:0;padding:0;display:grid;gap:4px;}
+  .mnav-links a{display:block;padding:14px 6px;font-size:19px;font-family:var(--ff-serif);font-weight:500;color:var(--heading);border-bottom:1px solid var(--line);}
+  .mnav .btn{margin-top:auto;}
+
+  /* MOBILE CALL BAR — szybki kontakt jednym dotknięciem */
+  .callbar{
+    position:fixed;left:0;right:0;bottom:0;z-index:90;display:none;gap:10px;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(255,255,255,.92);
+    backdrop-filter:saturate(140%) blur(12px);-webkit-backdrop-filter:saturate(140%) blur(12px);
+    border-top:1px solid var(--line);box-shadow:0 -8px 28px rgba(27,24,19,.10);
+  }
+  .callbar .btn{flex:1;padding:13px 16px;min-height:50px;}
+
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important;}
+    .reveal{opacity:1;transform:none;}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Przejdź do treści</a>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site" id="top">
+  <div class="wrap">
+    <nav class="nav" aria-label="Nawigacja główna">
+      <a class="brand" href="#top" aria-label="Strona główna — Adwokat Ewa Wojteczek">
+        <span class="monogram">EW</span>
+        <span class="bt"><b>Ewa Wojteczek</b><span>Kancelaria Adwokacka</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#kancelaria">Kancelaria</a></li>
+        <li><a class="nav-link" href="#specjalizacje">Specjalizacje</a></li>
+        <li><a class="nav-link" href="#adwokat">Adwokat</a></li>
+        <li><a class="nav-link" href="#kontakt">Kontakt</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="#kontakt">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Umów konsultację
+        </a>
+        <button class="hamburger" id="openNav" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobileNav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<div class="mnav" id="mobileNav" aria-hidden="true">
+  <div class="mnav-scrim" data-close></div>
+  <div class="mnav-panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="mnav-top">
+      <span class="brand"><span class="monogram">EW</span></span>
+      <button class="mnav-close" data-close aria-label="Zamknij menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <ul class="mnav-links">
+      <li><a href="#kancelaria" data-close>Kancelaria</a></li>
+      <li><a href="#specjalizacje" data-close>Specjalizacje</a></li>
+      <li><a href="#adwokat" data-close>Adwokat</a></li>
+      <li><a href="#kontakt" data-close>Kontakt</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#kontakt" data-close>Umów konsultację</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy reveal">
+        <h1>Prawo po Twojej stronie — <em>spokojnie i&nbsp;skutecznie</em></h1>
+        <p class="lead">Kancelaria Adwokacka adwokat Ewy Wojteczek oferuje indywidualne, rzetelne prowadzenie spraw na każdym etapie postępowania. Stawiam na jasną komunikację, realne rozwiązania i&nbsp;pełne zaangażowanie w&nbsp;Twoją sprawę.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#kontakt">Umów konsultację</a>
+          <a class="btn btn-ghost" href="#specjalizacje">Zobacz specjalizacje
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <!-- ZDJĘCIE: wstaw fotografię adwokat / kancelarii.
+             Aby je dodać: zapisz plik jako  images/ewa-portret.jpg
+             i odkomentuj poniższy <img>, a usuń blok .ph. -->
+        <figure class="portrait">
+          <!-- <img src="images/ewa-portret.jpg" alt="Adwokat Ewa Wojteczek"> -->
+          <div class="ph">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.6-3.6a2 2 0 0 0-2.8 0L6 20"/></svg>
+            <span class="ph-t">Miejsce na portret adwokat<br>lub zdjęcie kancelarii<br><code>images/ewa-portret.jpg</code></span>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ TRUST STRIP ============================ -->
+  <section class="trust" aria-label="Dlaczego warto">
+    <div class="wrap">
+      <div class="t reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div><h4>Pełne zaufanie</h4><p>Dyskrecja i tajemnica adwokacka na każdym etapie współpracy.</p></div>
+      </div>
+      <div class="t reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div><h4>Szybki kontakt</h4><p>Odpowiadam konkretnie i bez prawniczego żargonu.</p></div>
+      </div>
+      <div class="t reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 11V7a4 4 0 0 0-8 0v4"/><rect x="3" y="11" width="18" height="11" rx="2"/></svg>
+        <div><h4>Indywidualne podejście</h4><p>Każdą sprawę prowadzę osobiście, od początku do końca.</p></div>
+      </div>
+      <div class="t reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        <div><h4>Realne rozwiązania</h4><p>Skupiam się na celu, który ma znaczenie dla Klienta.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ KANCELARIA ============================ -->
+  <section class="section alt" id="kancelaria">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <!-- ZDJĘCIE: wnętrze kancelarii / biurko / Bełchatów.
+               Zapisz jako  images/kancelaria.jpg  i odkomentuj <img>. -->
+          <!-- <img src="images/kancelaria.jpg" alt="Wnętrze Kancelarii Adwokackiej w Bełchatowie"> -->
+          <div class="ph">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+            <span class="ph-t">Zdjęcie kancelarii<br><code>images/kancelaria.jpg</code></span>
+          </div>
+        </div>
+        <div class="about-copy reveal">
+          <span class="eyebrow">O Kancelarii</span>
+          <p class="lead">Kancelaria adwokacka działająca w&nbsp;Bełchatowie, otwarta na sprawy z&nbsp;całej Polski.</p>
+          <p>Pomagam Klientom indywidualnym oraz przedsiębiorcom uporządkować ich sytuację prawną — od pierwszej rozmowy, przez przygotowanie pism, aż po reprezentację przed sądem. Wierzę, że dobra obsługa prawna to nie tylko znajomość przepisów, ale też umiejętność wytłumaczenia ich w&nbsp;sposób zrozumiały.</p>
+          <p>Siedziba Kancelarii mieści się w&nbsp;Bełchatowie, a&nbsp;sprawy prowadzę w&nbsp;szczególności na terenie województwa łódzkiego, w&nbsp;tym w&nbsp;Piotrkowie Trybunalskim — oraz, w&nbsp;zależności od potrzeb, w&nbsp;całym kraju.</p>
+          <ul class="about-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Kompleksowa obsługa osób prywatnych i&nbsp;firm</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Reprezentacja na każdym etapie postępowania</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Jasne zasady współpracy i&nbsp;wyceny</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SPECJALIZACJE ============================ -->
+  <section class="section" id="specjalizacje">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow" style="justify-content:center">Specjalizacje</span>
+        <h2>Obszary, w których pomagam</h2>
+        <p class="lead">Wybierz dziedzinę, która dotyczy Twojej sprawy. Jeżeli nie masz pewności — po prostu napisz lub zadzwoń, wspólnie ustalimy najlepszą drogę.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div>
+          <h3>Sprawy cywilne</h3>
+          <p>Umowy, spadki, odszkodowania, sprawy o&nbsp;zapłatę i&nbsp;sprawy dotyczące nieruchomości — od porady po reprezentację w&nbsp;sądzie.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M3 7l9-4 9 4"/><path d="M5 7l-2 6a4 4 0 0 0 8 0L9 7"/><path d="M19 7l-2 6a4 4 0 0 0 8 0l-2-6"/><path d="M7 21h10"/></svg></div>
+          <h3>Sprawy karne</h3>
+          <p>Obrona oraz reprezentacja pokrzywdzonych na każdym etapie — od postępowania przygotowawczego po rozprawę.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg></div>
+          <h3>Sprawy rodzinne</h3>
+          <p>Rozwody, alimenty, kontakty z&nbsp;dziećmi i&nbsp;władza rodzicielska — prowadzone z&nbsp;wyczuciem i&nbsp;dyskrecją.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <h3>Prawo pracy</h3>
+          <p>Umowy o&nbsp;pracę, zwolnienia, mobbing i&nbsp;spory z&nbsp;pracodawcą — pomoc zarówno dla pracowników, jak i&nbsp;firm.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h3>Sprawy frankowe</h3>
+          <p>Analiza umowy kredytu, ustalenie roszczeń i&nbsp;prowadzenie sprawy przeciwko bankowi — krok po kroku.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><line x1="9" y1="21" x2="9" y2="13"/><line x1="15" y1="21" x2="15" y2="13"/></svg></div>
+          <h3>Sprawy gospodarcze</h3>
+          <p>Bieżące doradztwo dla przedsiębiorców, windykacja należności i&nbsp;reprezentacja w&nbsp;sporach gospodarczych.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ ADWOKAT ============================ -->
+  <section class="section alt" id="adwokat">
+    <div class="wrap">
+      <div class="attorney">
+        <div class="reveal">
+          <figure class="portrait">
+            <!-- ZDJĘCIE: portret adwokat Ewy Wojteczek.
+                 Zapisz jako  images/ewa-wojteczek.jpg  i odkomentuj <img>. -->
+            <!-- <img src="images/ewa-wojteczek.jpg" alt="Adwokat Ewa Wojteczek"> -->
+            <div class="ph">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span class="ph-t">Portret adwokat<br><code>images/ewa-wojteczek.jpg</code></span>
+            </div>
+          </figure>
+        </div>
+        <div class="reveal">
+          <p class="role">Adwokat</p>
+          <p class="quote">„Najlepsza sprawa to ta, którą Klient rozumie i&nbsp;w&nbsp;której czuje się zaopiekowany.”</p>
+          <p class="lead">Nazywam się Ewa Wojteczek i&nbsp;jako adwokat prowadzę sprawy z&nbsp;dokładnością, sumiennością oraz pełnym poszanowaniem prawa. Wspieram Klientów na każdym etapie postępowania — od pierwszej konsultacji po prawomocne zakończenie sprawy.</p>
+          <p class="lead">Cenię konkret i&nbsp;uczciwość. Zanim podejmiemy działania, jasno przedstawiam możliwe scenariusze, ryzyka i&nbsp;koszty, abyś mógł podejmować decyzje świadomie.</p>
+          <ul class="creds">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Członek Izby Adwokackiej</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Sprawy w&nbsp;całej Polsce</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Pełna tajemnica adwokacka</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Indywidualne prowadzenie sprawy</li>
+          </ul>
+          <p class="sig">Ewa Wojteczek</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CTA BAND ============================ -->
+  <section class="cta-band">
+    <div class="wrap reveal">
+      <h2>Masz sprawę, która nie daje Ci spokoju? Porozmawiajmy.</h2>
+      <p>Umów się na konsultację, podczas której wspólnie ocenimy Twoją sytuację i&nbsp;ustalimy dalsze kroki. Bez zobowiązań, w&nbsp;atmosferze pełnej dyskrecji.</p>
+      <a class="btn btn-gold" href="#kontakt">Umów konsultację</a>
+    </div>
+  </section>
+
+  <!-- ============================ KONTAKT ============================ -->
+  <section class="section alt" id="kontakt">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Kontakt</span>
+          <h2 style="font-size:clamp(28px,3.4vw,40px)">Skontaktuj się z&nbsp;Kancelarią</h2>
+          <p class="lead" style="margin-top:16px">Najszybciej skontaktujesz się telefonicznie lub mailowo. Postaram się odpowiedzieć możliwie najszybciej.</p>
+          <ul class="contact-list">
+            <li><a class="contact-item" href="tel:+48793172769">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <span><span class="lbl">Telefon</span><br><span class="val">+48 793 172 769</span></span>
+            </a></li>
+            <li><a class="contact-item" href="mailto:e.wojteczek@gmail.com">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></span>
+              <span><span class="lbl">E-mail</span><br><span class="val">e.wojteczek@gmail.com</span></span>
+            </a></li>
+            <li><a class="contact-item" href="https://www.google.com/maps/search/?api=1&query=Osiedle%20Marii%20Konopnickiej%205%2C%2097-400%20Be%C5%82chat%C3%B3w" target="_blank" rel="noopener">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span><span class="lbl">Adres · wyznacz trasę</span><br><span class="val">Osiedle Marii Konopnickiej 5, 97-400 Bełchatów</span></span>
+            </a></li>
+          </ul>
+          <div class="hours">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Spotkania w&nbsp;Kancelarii po wcześniejszym umówieniu telefonicznym lub mailowym.</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="map">
+            <!-- Mapa osadzona dla adresu Kancelarii. Aby podmienić na dokładny
+                 punkt z wizytówki Google, zastąp adres w parametrze ?q= własnym. -->
+            <iframe
+              title="Mapa — Kancelaria Adwokacka Ewa Wojteczek, Osiedle Marii Konopnickiej 5, Bełchatów"
+              src="https://www.google.com/maps?q=Osiedle%20Marii%20Konopnickiej%205%2C%2097-400%20Be%C5%82chat%C3%B3w&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="brand"><span class="monogram">EW</span><span class="bt"><b>Ewa Wojteczek</b><span style="color:rgba(244,241,234,.5)">Kancelaria Adwokacka</span></span></span>
+        <p class="foot-about">Rzetelna i&nbsp;skuteczna pomoc prawna z&nbsp;pełnym poszanowaniem prawa. Sprawy cywilne, rodzinne, karne, frankowe, z&nbsp;zakresu prawa pracy i&nbsp;gospodarcze.</p>
+      </div>
+      <div>
+        <h4>Nawigacja</h4>
+        <ul class="foot-links">
+          <li><a href="#kancelaria">Kancelaria</a></li>
+          <li><a href="#specjalizacje">Specjalizacje</a></li>
+          <li><a href="#adwokat">Adwokat</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul class="foot-links">
+          <li><a href="tel:+48793172769">+48 793 172 769</a></li>
+          <li><a href="mailto:e.wojteczek@gmail.com">e.wojteczek@gmail.com</a></li>
+          <li><a href="#kontakt">Osiedle M. Konopnickiej 5,<br>97-400 Bełchatów</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Kancelaria Adwokacka Ewa Wojteczek. Wszelkie prawa zastrzeżone.</span>
+      <span><a href="#">Polityka prywatności</a> · <a href="#">Ochrona danych (RODO)</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================ MOBILE CALL BAR ============================ -->
+<div class="callbar" aria-label="Szybki kontakt">
+  <a class="btn btn-gold" href="tel:+48793172769">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Zadzwoń
+  </a>
+  <a class="btn btn-primary" href="mailto:e.wojteczek@gmail.com">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+    Napisz
+  </a>
+</div>
+
+<script>
+  // Header border on scroll
+  const header = document.querySelector('header.site');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Mobile nav (z pułapką fokusu i przywróceniem fokusu)
+  const mnav = document.getElementById('mobileNav');
+  const openBtn = document.getElementById('openNav');
+  const panel = mnav.querySelector('.mnav-panel');
+  let lastFocused = null;
+  const openNav = () => {
+    lastFocused = document.activeElement;
+    mnav.classList.add('open'); mnav.setAttribute('aria-hidden','false');
+    openBtn.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden';
+    const first = panel.querySelector('a[href], button'); if (first) first.focus();
+  };
+  const closeNav = () => {
+    mnav.classList.remove('open'); mnav.setAttribute('aria-hidden','true');
+    openBtn.setAttribute('aria-expanded','false'); document.body.style.overflow='';
+    if (lastFocused) lastFocused.focus();
+  };
+  openBtn.addEventListener('click', openNav);
+  mnav.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeNav));
+  document.addEventListener('keydown', e => { if(e.key === 'Escape' && mnav.classList.contains('open')) closeNav(); });
+  mnav.addEventListener('keydown', e => {
+    if (e.key !== 'Tab' || !mnav.classList.contains('open')) return;
+    const f = [...panel.querySelectorAll('a[href], button:not([disabled])')];
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+
+  // Scrollspy — podświetlenie aktywnej pozycji w nawigacji
+  const navLinks = [...document.querySelectorAll('.nav-link')];
+  if ('IntersectionObserver' in window) {
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) {
+          const id = '#' + en.target.id;
+          navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === id));
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('section[id]').forEach(s => spy.observe(s));
+  }
+
+  // Reveal on scroll (respects reduced motion)
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const items = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach(el => el.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => { if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+    items.forEach(el => io.observe(el));
+  }
+
+  // Current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
